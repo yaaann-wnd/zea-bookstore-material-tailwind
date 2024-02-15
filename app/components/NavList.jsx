@@ -1,3 +1,4 @@
+import { BookOpenIcon, ListBulletIcon, Squares2X2Icon } from "@heroicons/react/24/outline";
 import { Typography } from "@material-tailwind/react";
 import Link from "next/link";
 
@@ -8,8 +9,9 @@ export default function NavList() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-medium"
+        className="flex items-center gap-x-2 p-1 font-medium"
       >
+        <Squares2X2Icon className="w-4" />
         <Link
           href="#"
           className="flex items-center hover:text-blue-500 transition-colors"
@@ -21,8 +23,9 @@ export default function NavList() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-medium"
+        className="flex items-center gap-x-2 p-1 font-medium"
       >
+        <BookOpenIcon className="w-4" />
         <Link
           href="#"
           className="flex items-center hover:text-blue-500 transition-colors"
@@ -34,8 +37,9 @@ export default function NavList() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-medium"
+        className="flex items-center gap-x-2 p-1 font-medium"
       >
+        <ListBulletIcon className="w-4" />
         <Link
           href="#"
           className="flex items-center hover:text-blue-500 transition-colors"
