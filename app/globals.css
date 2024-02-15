@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 html {
-    @apply tracking-tight text-lg;
+    @apply tracking-tight text-lg text-gray-900;
 }

@@ -9,12 +9,12 @@ export default function NavList() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center gap-x-2 p-1 font-medium"
+        className="flex items-center gap-x-2 p-1 font-medium hover:text-indigo-400 transition-colors"
       >
         <Squares2X2Icon className="w-4" />
         <Link
-          href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          href="/"
+          className="flex items-center"
         >
           Dashboard
         </Link>
@@ -23,12 +23,12 @@ export default function NavList() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center gap-x-2 p-1 font-medium"
+        className="flex items-center gap-x-2 p-1 font-medium hover:text-indigo-400 transition-colors"
       >
         <BookOpenIcon className="w-4" />
         <Link
-          href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          href="/buku"
+          className="flex items-center"
         >
           Buku
         </Link>
@@ -37,12 +37,12 @@ export default function NavList() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center gap-x-2 p-1 font-medium"
+        className="flex items-center gap-x-2 p-1 font-medium hover:text-indigo-400 transition-colors"
       >
         <ListBulletIcon className="w-4" />
         <Link
-          href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          href="/kategori"
+          className="flex items-center"
         >
           Kategori
         </Link>

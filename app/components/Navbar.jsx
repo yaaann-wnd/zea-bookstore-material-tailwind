@@ -10,6 +10,7 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
 import NavList from "./NavList";
+import Link from "next/link";
 
 export default function NavbarSimple() {
   const [openNav, setOpenNav] = useState(false);
@@ -28,13 +29,8 @@ export default function NavbarSimple() {
   return (
     <Navbar className="max-w-screen-xl mx-auto px-6 py-3 mb-5">
       <div className="flex items-center justify-between text-blue-gray-900">
-        <Typography
-          as="a"
-          href="#"
-          variant="h6"
-          className="mr-4 cursor-pointer py-1.5"
-        >
-          ZEA Bookstore
+        <Typography variant="h6" className="mr-4 cursor-pointer py-1.5">
+          <Link href={"/"}>ZEA Bookstore</Link>
         </Typography>
         <div className="hidden lg:block">
           <NavList />
