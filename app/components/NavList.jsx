@@ -14,6 +14,19 @@ export default function NavList() {
           href="#"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
+          Dashboard
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <Link
+          href="#"
+          className="flex items-center hover:text-blue-500 transition-colors"
+        >
           Buku
         </Link>
       </Typography>
@@ -28,19 +41,6 @@ export default function NavList() {
           className="flex items-center hover:text-blue-500 transition-colors"
         >
           Kategori
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <Link
-          href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
-        >
-          Dashboard
         </Link>
       </Typography>
     </ul>
