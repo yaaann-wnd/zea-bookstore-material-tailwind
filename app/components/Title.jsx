@@ -1,3 +1,3 @@
 export default function Title ({children}) {
-    return <p className="ms-10 font-semibold text-3xl">{children}</p>
+    return <p className="font-semibold text-3xl mb-3">{children}</p>
 }
