@@ -1,6 +1,7 @@
 import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import NavbarSimple from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const work_sans = Work_Sans({
   subsets: ["latin"],
@@ -17,7 +18,10 @@ export default function RootLayout({ children }) {
     <html lang="en" className={work_sans.variable}>
       <body>
         <NavbarSimple />
-        <div className="max-w-screen-xl mx-auto">{children}</div>
+        <div className="max-w-screen-xl mx-auto">
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
 "use client";
+
 import {
   Card,
   CardHeader,
@@ -9,35 +10,49 @@ import {
 import Button from "./Button";
 import Chip from "./Chip";
 import Ellipsis from "./Ellipsis";
+import Image from "next/image";
 
-export default function BookCard() {
+export default function BookCard({
+  title,
+  author,
+  price,
+  desc,
+  category,
+  image,
+  priority
+}) {
   return (
     <Card>
-      <CardHeader shadow={false} floated={false} className="h-60">
-        <img
-          src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+      <CardHeader shadow={false} floated={false} className="h-80">
+        <Image
+          src={image}
+          width={500}
+          height={500}
           alt="card-image"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain"
+          priority={priority}
         />
       </CardHeader>
       <CardBody>
-        <div className="mb-1 flex items-center justify-between">
-          <Typography color="blue-gray" className="font-medium">
-            Romance story
-          </Typography>
-          <Typography color="blue-gray" className="font-medium">
-            $95.00
-          </Typography>
-        </div>
-        <Chip value="Horror" />
+        <Typography color="blue-gray" className="font-medium mb-[-3px] text-xl">
+          {title}
+        </Typography>
+        <Typography
+          color="blue-gray"
+          variant="small"
+          className="font-normal opacity-70 mb-2"
+        >
+          {author}
+        </Typography>
+        <Chip value={category} />
         <Typography
           variant="small"
           color="gray"
           className="font-normal opacity-75 mt-2"
         >
-          With plenty of talk and listen time, voice-activated Siri access, and
-          an available wireless charging case.
+          <span className="line-clamp-3 mb-3 leading-snug">{desc}</span>
         </Typography>
+        <Typography className="font-medium text-lg">{price}</Typography>
       </CardBody>
       <CardFooter className="pt-0 flex justify-between">
         <Button>Lihat detail</Button>
