@@ -14,7 +14,6 @@ import Image from "next/image";
 
 export default function BookCard({
   title,
-  author,
   price,
   desc,
   category,
@@ -34,15 +33,8 @@ export default function BookCard({
         />
       </CardHeader>
       <CardBody>
-        <Typography color="blue-gray" className="font-medium mb-[-3px] text-xl">
+        <Typography color="blue-gray" className="font-medium text-xl mb-1">
           {title}
-        </Typography>
-        <Typography
-          color="blue-gray"
-          variant="small"
-          className="font-normal opacity-70 mb-2"
-        >
-          {author}
         </Typography>
         <Chip value={category} />
         <Typography
